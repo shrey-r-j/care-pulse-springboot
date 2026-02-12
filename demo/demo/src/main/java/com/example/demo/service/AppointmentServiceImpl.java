@@ -4,9 +4,10 @@ import com.example.demo.entity.Appointment;
 import com.example.demo.repository.AppointmentRepository;
 import com.example.demo.utilities.AppointmentStatus;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class AppointmentServiceImpl implements AppointmentService{
 
     private AppointmentRepository appointmentRepository;
