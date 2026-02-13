@@ -22,6 +22,11 @@ public class PatientServiceImpl implements PatientService{
 
     @Override
     public Patient getPatientById(Long id) {
-        return patientRepository.findById(id).orElseThrow(()->new RuntimeException("Patient not found"));
+        return patientRepository.findById(id).orElseThrow(()->new ResourceNotFoundException("Patient not found"));
+    }
+}
+class ResourceNotFoundException extends RuntimeException{
+    public ResourceNotFoundException(String message) {
+        super(message);
     }
 }

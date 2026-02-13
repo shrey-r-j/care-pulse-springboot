@@ -4,6 +4,7 @@ import com.example.demo.dto.request.AppointmentRequestDTO;
 import com.example.demo.dto.response.AppointmentResponseDTO;
 import com.example.demo.entity.Appointment;
 import com.example.demo.service.AppointmentServiceImpl;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +21,7 @@ public class AppointmentController {
     }
 
     @PostMapping
-    public AppointmentResponseDTO book(@RequestBody AppointmentRequestDTO dto){
+    public AppointmentResponseDTO book(@Valid @RequestBody AppointmentRequestDTO dto){
         return appointmentService.bookAppointment(dto);
     }
 
