@@ -4,6 +4,8 @@ import com.example.demo.utilities.AppointmentStatus;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Data
 @Table(name = "appointments")
@@ -30,4 +32,6 @@ public class Appointment {
     private String note;
 
     private String cancellationReason;
+
+    private LocalDateTime appointmentDate;
 }

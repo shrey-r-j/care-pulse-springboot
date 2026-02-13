@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import com.example.demo.dto.request.AppointmentRequestDTO;
+import com.example.demo.dto.response.AppointmentResponseDTO;
 import com.example.demo.entity.Appointment;
 import com.example.demo.service.AppointmentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +20,8 @@ public class AppointmentController {
     }
 
     @PostMapping
-    public Appointment book(@RequestBody Appointment appointment){
-        return appointmentService.bookAppointment(appointment);
+    public AppointmentResponseDTO book(@RequestBody AppointmentRequestDTO dto){
+        return appointmentService.bookAppointment(dto);
     }
 
     @GetMapping("/patient/{patientId}")
