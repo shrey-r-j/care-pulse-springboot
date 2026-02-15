@@ -3,11 +3,13 @@ package com.example.demo.entity;
 import com.example.demo.utilities.AppointmentStatus;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Data
+@NoArgsConstructor
 @Table(name = "appointments")
 public class Appointment {
 
