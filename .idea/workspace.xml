@@ -2,9 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b2eeee9-451f-4c3a-9796-1d931f52e9fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.idea/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.idea/demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/controller/AppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/controller/AppointmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/dto/request/AppointmentRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/dto/request/AppointmentRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/dto/response/AppointmentResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/dto/response/AppointmentResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/entity/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/entity/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/entity/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/entity/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/entity/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/entity/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/entity/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/entity/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/repository/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/repository/AppointmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/repository/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/repository/DoctorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/repository/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/service/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/service/AppointmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/service/AppointmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/service/AppointmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/service/CustomUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/service/CustomUserDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/service/DoctorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/service/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/utilities/AppointmentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/utilities/AppointmentStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/utilities/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/utilities/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/utilities/IdentificationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/utilities/IdentificationType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/utilities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/utilities/Role.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,19 +72,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Care-Pulse-Migration" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Care-Pulse-Migration" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Care-Pulse-Migration" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
