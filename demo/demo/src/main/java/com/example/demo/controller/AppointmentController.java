@@ -6,6 +6,7 @@ import com.example.demo.entity.Appointment;
 import com.example.demo.service.AppointmentServiceImpl;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,17 +17,19 @@ public class AppointmentController {
     private AppointmentServiceImpl appointmentService;
 
     @Autowired
-    AppointmentController(AppointmentServiceImpl appointmentService){
+    AppointmentController(AppointmentServiceImpl appointmentService) {
         this.appointmentService = appointmentService;
     }
 
     @PostMapping
-    public AppointmentResponseDTO book(@Valid @RequestBody AppointmentRequestDTO dto){
+    @PreAuthorize("hasRole('PATIENT')")
+    public AppointmentResponseDTO book(@Valid @RequestBody AppointmentRequestDTO dto) {
         return appointmentService.bookAppointment(dto);
     }
 
     @GetMapping("/patient/{patientId}")
-    public List<Appointment> getByPatient(@PathVariable Long patientId){
+    @PreAuthorize("hasRole('PATIENT') or hasRole('DOCTOR') or hasRole('ADMIN')")
+    public List<Appointment> getByPatient(@PathVariable Long patientId) {
         return appointmentService.getAppointmentByPatient(patientId);
     }
 }
