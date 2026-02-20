@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import com.example.demo.dto.request.PatientRequestDTO;
+import com.example.demo.dto.response.PatientResponseDTO;
 import com.example.demo.entity.Patient;
 import com.example.demo.service.PatientServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,13 +19,23 @@ public class PatientController {
     }
 
     @PostMapping
-    public Patient createPatient(@RequestBody Patient patient) {
+    public PatientResponseDTO createPatient(@RequestBody PatientRequestDTO patient) {
         return patientService.createPatient(patient);
     }
 
     @GetMapping("/{id}")
     @PreAuthorize("hasRole('DOCTOR') or hasRole('ADMIN') or hasRole('PATIENT')")
-    public Patient getPatient(@PathVariable Long id) {
-        return patientService.getPatientById(id);
+    public PatientResponseDTO getPatient(@PathVariable Long id) {
+        return mapToResponse(patientService.getPatientById(id));
+    }
+
+    private PatientResponseDTO mapToResponse(Patient saved) {
+        return new PatientResponseDTO(
+                saved.getId(),
+                saved.getName(),
+                saved.getUser().getEmail(),
+                saved.getPhone(),
+                saved.getAddress(),
+                saved.getGender());
     }
 }
