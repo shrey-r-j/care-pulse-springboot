@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Entity
 @Data
@@ -19,18 +19,17 @@ public class Patient {
     private String name;
     private int age;
     private String gender;
-    private LocalDateTime birthDate;
+    private LocalDate birthDate;
     private String address;
     private String phone;
 
     @Enumerated(EnumType.STRING)
     private IdentificationType identificationType;
 
-    @Column(unique = true)
     private String identificationNumber;
 
+    @Column(columnDefinition = "TEXT")
     private String identificationDocumentUrl;
-    private String identificationDocumentId;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")

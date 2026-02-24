@@ -1,6 +1,11 @@
 package com.example.demo.dto.response;
 
+import com.example.demo.utilities.IdentificationType;
 import com.fasterxml.jackson.annotation.JsonFormat;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -21,6 +26,5 @@ public class AppointmentResponseDTO {
 
     private Long patientId;
     private Long doctorId;
-
 
 }

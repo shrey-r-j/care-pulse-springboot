@@ -37,6 +37,9 @@ public class PatientServiceImpl implements PatientService {
         user.setPassword(passwordEncoder.encode(dto.getPassword()));
         user.setRole(com.example.demo.utilities.Role.PATIENT);
 
+        patient.setIdentificationNumber(dto.getIdentificationNumber());
+        patient.setIdentificationType(dto.getIdentificationType());
+        patient.setIdentificationDocumentUrl(dto.getIdentificationDocumentUrl());
         patient.setUser(user);
 
         Patient saved = patientRepository.save(patient);
@@ -47,7 +50,10 @@ public class PatientServiceImpl implements PatientService {
                 saved.getUser().getEmail(),
                 saved.getPhone(),
                 saved.getAddress(),
-                saved.getGender());
+                saved.getGender(),
+                saved.getIdentificationNumber(),
+                saved.getIdentificationType(),
+                saved.getIdentificationDocumentUrl());
     }
 
     @Override

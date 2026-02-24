@@ -1,12 +1,18 @@
 package com.example.demo.dto.request;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import jakarta.persistence.Column;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+
+import com.example.demo.utilities.IdentificationType;
 
 @Data
 public class PatientRequestDTO {
@@ -27,11 +33,19 @@ public class PatientRequestDTO {
     @NotBlank(message = "Gender is required")
     private String gender;
 
-    private LocalDateTime birthDate;
+    private LocalDate birthDate;
 
     @NotBlank(message = "Address is required")
     private String address;
 
     @NotBlank(message = "Phone is required")
     private String phone;
+
+    @Column(unique = true)
+    private String identificationNumber;
+
+    @Enumerated(EnumType.STRING)
+    private IdentificationType identificationType;
+
+    private String identificationDocumentUrl;
 }

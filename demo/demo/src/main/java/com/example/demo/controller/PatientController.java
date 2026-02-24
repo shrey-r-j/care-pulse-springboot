@@ -36,6 +36,9 @@ public class PatientController {
                 saved.getUser().getEmail(),
                 saved.getPhone(),
                 saved.getAddress(),
-                saved.getGender());
+                saved.getGender(),
+                saved.getIdentificationNumber(),
+                saved.getIdentificationType(),
+                saved.getIdentificationDocumentUrl());
     }
 }
